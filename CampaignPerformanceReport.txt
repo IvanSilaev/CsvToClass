@@ -1,0 +1,380 @@
+public class CampaignPerformanceReport {
+	@CsvField(name = "Currency", field = "AccountCurrencyCode")
+	private String accountCurrencyCode;
+
+	@CsvField(name = "Account", field = "AccountDescriptiveName")
+	private String accountDescriptiveName;
+
+	@CsvField(name = "Time zone", field = "AccountTimeZone")
+	private String accountTimeZone;
+
+	@CsvField(name = "Active View avg. CPM", field = "ActiveViewCpm")
+	private String activeViewCpm;
+
+	@CsvField(name = "Active View viewable CTR", field = "ActiveViewCtr")
+	private String activeViewCtr;
+
+	@CsvField(name = "Active View viewable impressions", field = "ActiveViewImpressions")
+	private String activeViewImpressions;
+
+	@CsvField(name = "Active View measurable impr. / impr.", field = "ActiveViewMeasurability")
+	private String activeViewMeasurability;
+
+	@CsvField(name = "Active View measurable cost", field = "ActiveViewMeasurableCost")
+	private String activeViewMeasurableCost;
+
+	@CsvField(name = "Active View measurable impr.", field = "ActiveViewMeasurableImpressions")
+	private String activeViewMeasurableImpressions;
+
+	@CsvField(name = "Active View viewable impr. / measurable impr.", field = "ActiveViewViewability")
+	private String activeViewViewability;
+
+	@CsvField(name = "Network", field = "AdNetworkType1")
+	private String adNetworkType1;
+
+	@CsvField(name = "Network (with search partners)", field = "AdNetworkType2")
+	private String adNetworkType2;
+
+	@CsvField(name = "Advertising Sub Channel", field = "AdvertisingChannelSubType")
+	private String advertisingChannelSubType;
+
+	@CsvField(name = "Advertising Channel", field = "AdvertisingChannelType")
+	private String advertisingChannelType;
+
+	@CsvField(name = "All conv. rate", field = "AllConversionRate")
+	private String allConversionRate;
+
+	@CsvField(name = "All conv.", field = "AllConversions")
+	private String allConversions;
+
+	@CsvField(name = "All conv. value", field = "AllConversionValue")
+	private String allConversionValue;
+
+	@CsvField(name = "Budget", field = "Amount")
+	private String amount;
+
+	@CsvField(name = "Avg. Cost", field = "AverageCost")
+	private String averageCost;
+
+	@CsvField(name = "Avg. CPC", field = "AverageCpc")
+	private String averageCpc;
+
+	@CsvField(name = "Avg. CPE", field = "AverageCpe")
+	private String averageCpe;
+
+	@CsvField(name = "Avg. CPM", field = "AverageCpm")
+	private String averageCpm;
+
+	@CsvField(name = "Avg. CPV", field = "AverageCpv")
+	private String averageCpv;
+
+	@CsvField(name = "Avg. impr. freq. per cookie", field = "AverageFrequency")
+	private String averageFrequency;
+
+	@CsvField(name = "Pages / session", field = "AveragePageviews")
+	private String averagePageviews;
+
+	@CsvField(name = "Avg. position", field = "AveragePosition")
+	private String averagePosition;
+
+	@CsvField(name = "Avg. session duration (seconds)", field = "AverageTimeOnSite")
+	private String averageTimeOnSite;
+
+	@CsvField(name = "Base Campaign ID", field = "BaseCampaignId")
+	private String baseCampaignId;
+
+	@CsvField(name = "Bid Strategy ID", field = "BiddingStrategyId")
+	private String biddingStrategyId;
+
+	@CsvField(name = "Bid Strategy Name", field = "BiddingStrategyName")
+	private String biddingStrategyName;
+
+	@CsvField(name = "Bid Strategy Type", field = "BiddingStrategyType")
+	private String biddingStrategyType;
+
+	@CsvField(name = "Bounce rate", field = "BounceRate")
+	private String bounceRate;
+
+	@CsvField(name = "Budget ID", field = "BudgetId")
+	private String budgetId;
+
+	@CsvField(name = "Desktop bid adj.", field = "CampaignDesktopBidModifier")
+	private String campaignDesktopBidModifier;
+
+	@CsvField(name = "Campaign Group ID", field = "CampaignGroupId")
+	private String campaignGroupId;
+
+	@CsvField(name = "Campaign ID", field = "CampaignId")
+	private String campaignId;
+
+	@CsvField(name = "Mobile bid adj.", field = "CampaignMobileBidModifier")
+	private String campaignMobileBidModifier;
+
+	@CsvField(name = "Campaign", field = "CampaignName")
+	private String campaignName;
+
+	@CsvField(name = "Campaign state", field = "CampaignStatus")
+	private String campaignStatus;
+
+	@CsvField(name = "Tablet bid adj.", field = "CampaignTabletBidModifier")
+	private String campaignTabletBidModifier;
+
+	@CsvField(name = "Campaign Trial Type", field = "CampaignTrialType")
+	private String campaignTrialType;
+
+	@CsvField(name = "Click Assisted Conv.", field = "ClickAssistedConversions")
+	private String clickAssistedConversions;
+
+	@CsvField(name = "Click Assisted Conv. / Last Click Conv.", field = "ClickAssistedConversionsOverLastClickConversions")
+	private String clickAssistedConversionsOverLastClickConversions;
+
+	@CsvField(name = "Click Assisted Conv. Value", field = "ClickAssistedConversionValue")
+	private String clickAssistedConversionValue;
+
+	@CsvField(name = "Clicks", field = "Clicks")
+	private String clicks;
+
+	@CsvField(name = "Click type", field = "ClickType")
+	private String clickType;
+
+	@CsvField(name = "Content Lost IS (budget)", field = "ContentBudgetLostImpressionShare")
+	private String contentBudgetLostImpressionShare;
+
+	@CsvField(name = "Content Impr. share", field = "ContentImpressionShare")
+	private String contentImpressionShare;
+
+	@CsvField(name = "Content Lost IS (rank)", field = "ContentRankLostImpressionShare")
+	private String contentRankLostImpressionShare;
+
+	@CsvField(name = "Conversion category", field = "ConversionCategoryName")
+	private String conversionCategoryName;
+
+	@CsvField(name = "Days to conversion", field = "ConversionLagBucket")
+	private String conversionLagBucket;
+
+	@CsvField(name = "Conv. rate", field = "ConversionRate")
+	private String conversionRate;
+
+	@CsvField(name = "Conversions", field = "Conversions")
+	private String conversions;
+
+	@CsvField(name = "Conversion Tracker Id", field = "ConversionTrackerId")
+	private String conversionTrackerId;
+
+	@CsvField(name = "Conversion name", field = "ConversionTypeName")
+	private String conversionTypeName;
+
+	@CsvField(name = "Total conv. value", field = "ConversionValue")
+	private String conversionValue;
+
+	@CsvField(name = "Cost", field = "Cost")
+	private String cost;
+
+	@CsvField(name = "Cost / all conv.", field = "CostPerAllConversion")
+	private String costPerAllConversion;
+
+	@CsvField(name = "Cost / conv.", field = "CostPerConversion")
+	private String costPerConversion;
+
+	@CsvField(name = "Cost / conv. (current model)", field = "CostPerCurrentModelAttributedConversion")
+	private String costPerCurrentModelAttributedConversion;
+
+	@CsvField(name = "Cross-device conv.", field = "CrossDeviceConversions")
+	private String crossDeviceConversions;
+
+	@CsvField(name = "CTR", field = "Ctr")
+	private String ctr;
+
+	@CsvField(name = "Conversions (current model)", field = "CurrentModelAttributedConversions")
+	private String currentModelAttributedConversions;
+
+	@CsvField(name = "Conv. value (current model)", field = "CurrentModelAttributedConversionValue")
+	private String currentModelAttributedConversionValue;
+
+	@CsvField(name = "Client name", field = "CustomerDescriptiveName")
+	private String customerDescriptiveName;
+
+	@CsvField(name = "Day", field = "Date")
+	private String date;
+
+	@CsvField(name = "Day of week", field = "DayOfWeek")
+	private String dayOfWeek;
+
+	@CsvField(name = "Device", field = "Device")
+	private String device;
+
+	@CsvField(name = "End date", field = "EndDate")
+	private String endDate;
+
+	@CsvField(name = "Engagement rate", field = "EngagementRate")
+	private String engagementRate;
+
+	@CsvField(name = "Engagements", field = "Engagements")
+	private String engagements;
+
+	@CsvField(name = "Enhanced CPC enabled", field = "EnhancedCpcEnabled")
+	private String enhancedCpcEnabled;
+
+	@CsvField(name = "Conversion source", field = "ExternalConversionSource")
+	private String externalConversionSource;
+
+	@CsvField(name = "Customer ID", field = "ExternalCustomerId")
+	private String externalCustomerId;
+
+	@CsvField(name = "Final URL suffix", field = "FinalUrlSuffix")
+	private String finalUrlSuffix;
+
+	@CsvField(name = "Gmail forwards", field = "GmailForwards")
+	private String gmailForwards;
+
+	@CsvField(name = "Gmail saves", field = "GmailSaves")
+	private String gmailSaves;
+
+	@CsvField(name = "Gmail clicks to website", field = "GmailSecondaryClicks")
+	private String gmailSecondaryClicks;
+
+	@CsvField(name = "Hour of day", field = "HourOfDay")
+	private String hourOfDay;
+
+	@CsvField(name = "Impr. Assisted Conv.", field = "ImpressionAssistedConversions")
+	private String impressionAssistedConversions;
+
+	@CsvField(name = "Impr. Assisted Conv. / Last Click Conv.", field = "ImpressionAssistedConversionsOverLastClickConversions")
+	private String impressionAssistedConversionsOverLastClickConversions;
+
+	@CsvField(name = "Impr. Assisted Conv. Value", field = "ImpressionAssistedConversionValue")
+	private String impressionAssistedConversionValue;
+
+	@CsvField(name = "Unique cookies", field = "ImpressionReach")
+	private String impressionReach;
+
+	@CsvField(name = "Impressions", field = "Impressions")
+	private String impressions;
+
+	@CsvField(name = "Interaction Rate", field = "InteractionRate")
+	private String interactionRate;
+
+	@CsvField(name = "Interactions", field = "Interactions")
+	private String interactions;
+
+	@CsvField(name = "Interaction Types", field = "InteractionTypes")
+	private String interactionTypes;
+
+	@CsvField(name = "Invalid click rate", field = "InvalidClickRate")
+	private String invalidClickRate;
+
+	@CsvField(name = "Invalid clicks", field = "InvalidClicks")
+	private String invalidClicks;
+
+	@CsvField(name = "Budget explicitly shared", field = "IsBudgetExplicitlyShared")
+	private String isBudgetExplicitlyShared;
+
+	@CsvField(name = "Label IDs", field = "LabelIds")
+	private String labelIds;
+
+	@CsvField(name = "Labels", field = "Labels")
+	private String labels;
+
+	@CsvField(name = "Target ROAS (Maximize Conversion Value)", field = "MaximizeConversionValueTargetRoas")
+	private String maximizeConversionValueTargetRoas;
+
+	@CsvField(name = "Month", field = "Month")
+	private String month;
+
+	@CsvField(name = "Month of Year", field = "MonthOfYear")
+	private String monthOfYear;
+
+	@CsvField(name = "Phone impressions", field = "NumOfflineImpressions")
+	private String numOfflineImpressions;
+
+	@CsvField(name = "Phone calls", field = "NumOfflineInteractions")
+	private String numOfflineInteractions;
+
+	@CsvField(name = "PTR", field = "OfflineInteractionRate")
+	private String offlineInteractionRate;
+
+	@CsvField(name = "% new sessions", field = "PercentNewVisitors")
+	private String percentNewVisitors;
+
+	@CsvField(name = "Budget period", field = "Period")
+	private String period;
+
+	@CsvField(name = "Quarter", field = "Quarter")
+	private String quarter;
+
+	@CsvField(name = "Relative CTR", field = "RelativeCtr")
+	private String relativeCtr;
+
+	@CsvField(name = "Search abs. top IS", field = "SearchAbsoluteTopImpressionShare")
+	private String searchAbsoluteTopImpressionShare;
+
+	@CsvField(name = "Search Lost IS (budget)", field = "SearchBudgetLostImpressionShare")
+	private String searchBudgetLostImpressionShare;
+
+	@CsvField(name = "Click share", field = "SearchClickShare")
+	private String searchClickShare;
+
+	@CsvField(name = "Search Exact match IS", field = "SearchExactMatchImpressionShare")
+	private String searchExactMatchImpressionShare;
+
+	@CsvField(name = "Search Impr. share", field = "SearchImpressionShare")
+	private String searchImpressionShare;
+
+	@CsvField(name = "Search Lost IS (rank)", field = "SearchRankLostImpressionShare")
+	private String searchRankLostImpressionShare;
+
+	@CsvField(name = "Campaign serving status", field = "ServingStatus")
+	private String servingStatus;
+
+	@CsvField(name = "Top vs. Other", field = "Slot")
+	private String slot;
+
+	@CsvField(name = "Start date", field = "StartDate")
+	private String startDate;
+
+	@CsvField(name = "Total Budget amount", field = "TotalAmount")
+	private String totalAmount;
+
+	@CsvField(name = "Tracking template", field = "TrackingUrlTemplate")
+	private String trackingUrlTemplate;
+
+	@CsvField(name = "Custom parameter", field = "UrlCustomParameters")
+	private String urlCustomParameters;
+
+	@CsvField(name = "Value / all conv.", field = "ValuePerAllConversion")
+	private String valuePerAllConversion;
+
+	@CsvField(name = "Value / conv.", field = "ValuePerConversion")
+	private String valuePerConversion;
+
+	@CsvField(name = "Value / conv. (current model)", field = "ValuePerCurrentModelAttributedConversion")
+	private String valuePerCurrentModelAttributedConversion;
+
+	@CsvField(name = "Video played to 100%", field = "VideoQuartile100Rate")
+	private String videoQuartile100Rate;
+
+	@CsvField(name = "Video played to 25%", field = "VideoQuartile25Rate")
+	private String videoQuartile25Rate;
+
+	@CsvField(name = "Video played to 50%", field = "VideoQuartile50Rate")
+	private String videoQuartile50Rate;
+
+	@CsvField(name = "Video played to 75%", field = "VideoQuartile75Rate")
+	private String videoQuartile75Rate;
+
+	@CsvField(name = "View rate", field = "VideoViewRate")
+	private String videoViewRate;
+
+	@CsvField(name = "Views", field = "VideoViews")
+	private String videoViews;
+
+	@CsvField(name = "View-through conv.", field = "ViewThroughConversions")
+	private String viewThroughConversions;
+
+	@CsvField(name = "Week", field = "Week")
+	private String week;
+
+	@CsvField(name = "Year", field = "Year")
+	private String year;
+
+}
